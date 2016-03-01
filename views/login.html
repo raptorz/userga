@@ -1,0 +1,30 @@
+<%inherit file="sitebase.html"/>
+<div class="panel panel-primary login-dialog">
+    <div class="panel-heading"><h3 class="panel-title">登录</h3></div>
+<div class="panel-body login-panel">
+<form action="/${base}/login" method="post">
+    <div class="input-group">
+    	<span class="input-group-addon">email:</span>
+        % if email:
+        <input type="text" class="form-control" name="email" value="${email}" readonly />
+        % else:
+    	<input type="text" class="form-control" name="email" />
+        % endif
+    </div><br/>
+    % if email:
+    <div class="input-group">
+    	<span class="input-group-addon">密码：</span>
+    	<input type="password" class="form-control" name="password" />
+    </div><br/>
+    % else:
+    <input type="hidden" name="password" value="" />
+    % endif
+    <div class="pull-left">
+        <a href="/${base}/resetpw">重置密码</a>
+    </div>
+    <div class="pull-right">
+    	<input type="submit" class="btn btn-primary" name="submit" value="登录" />
+    </div>
+</form>
+</div>
+</div>

@@ -1,0 +1,15 @@
+<%inherit file="sitebase.html"/>
+<div class="panel panel-primary login-dialog">
+    <div class="panel-heading"><h3 class="panel-title">重设密码</h3></div>
+<div class="panel-body login-panel">
+<form action="/${base}/resetpw" method="post">
+    <div class="input-group">
+    	<span class="input-group-addon">email:</span>
+        <input type="text" class="form-control" name="email" />
+    </div><br/>
+    <div class="pull-right">
+    	<input type="submit" class="btn btn-primary" name="submit" value="发送重置邮件" />
+    </div>
+</form>
+</div>
+</div>

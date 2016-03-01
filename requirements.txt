@@ -1,0 +1,8 @@
+bottle>=0.12
+mako>=1.0
+beaker
+sqlalchemy
+bottle-sqlalchemy
+pyqrcode
+pypng
+otpauth

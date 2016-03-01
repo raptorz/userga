@@ -1,0 +1,19 @@
+<%inherit file="sitebase.html"/>
+<div class="panel panel-primary login-dialog">
+    <div class="panel-heading"><h3 class="panel-title">设置密码</h3></div>
+<div class="panel-body login-panel">
+<form action="/${base}/setpw" method="post">
+    <div class="input-group">
+    	<span class="input-group-addon">email:</span>
+        <input type="text" class="form-control" name="email" value="${email}" readonly />
+    </div><br/>
+    <div class="input-group">
+    	<span class="input-group-addon">密码：</span>
+    	<input type="password" class="form-control" name="password" placeholder="请输入Google Authenticator上生成的6位数字密码" />
+    </div><br/>
+    <div class="pull-right">
+    	<input type="submit" class="btn btn-primary" name="submit" value="提交" />
+    </div>
+</form>
+</div>
+</div>
